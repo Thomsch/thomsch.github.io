@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        <title>Bootstrap Example</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <meta charset="utf-8">
-        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="https://fonts.googleapis.com/css?family=Chivo:900" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <!--<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">-->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" type="text/css" href="css/theme.css">
-
 
         <meta name="description" content="Thomas Schweizer Resume Website" />
         <meta name="google" content="notranslate" />
@@ -26,7 +20,6 @@
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
-
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -52,28 +45,27 @@
         <header class="jumbotron">
             <div class="container">
                 <h1>Thomas Schweizer</h1>
-                <p class="headline">Passionate engineer</p>
-                <p class="headline">Learning new technologies by practice</p>
+                <p id="headline">Development website</p>
             </div>
         </header>
 
-        <section id="aboutme" class="container">
-            <h2>My vision</h2>
+        <section id="aboutme" class="container row content-row">
+            <h2>About me</h2>
             <p>Writing clean and readable code.</p>
             <p>Engineering simple and sustainable designs</p>
             <p>Users are often stuck with unusable programs. I want change that and make great tools that can be used seamlessly by their users.</p>
+            <p>Learning new technologies by practice</p>
         </section>
 
-        <section id="project" class="container">
+        <section id="project" class="container row content-row">
             <h2>Projects</h2>
 
-            <section class="row content-row">
+            <section>
                 <h3>Cool project I'm working on</h3>
                 <p>I'm currently developing and designing <span>Seshat</span>. This project is a response to the lack of open source class diagrams. With this project, I'm also aiming to upgrade the concept of class diagram and design for program designing.</p>
             </section>
 
-            <section class="row content-row">
-
+            <section>
                 <h3>Past projects</h3>
 
                 <!--
@@ -112,7 +104,7 @@
             </section>
         </section>
 
-        <section id="contactme" class="container">
+        <section id="contactme" class="container row content-row">
             <h2>I/O</h2>
             <div class="contact">
                 <div class="col-xs-12 col-sm-2 col-sm-offset-2">

@@ -1,23 +1,20 @@
 .jumbotron {
     padding:70px 30px 70px 30px;
     margin:0px auto;
-    background: #7340cb;
+    background: #006083;
     color:floralwhite;
 }
 
-.headline {
+#headline {
     margin:0px auto;
     padding-left: 20px;
+    font-style: italic;
 }
 
 footer {
     background-color: #AfAfAf;
     margin:0px auto;
     padding: 20px 0px 20px 0px;
-}
-
-h2 {
-    font-style: italic;
 }
 
 .content-row {
@@ -32,7 +29,7 @@ h2 {
     margin-top:10px;
     padding-left:20px;
     border: 2px ridge black;
-    min-height: 200px;
+    min-height: 100px;
 }
 
 .contact-logo {
