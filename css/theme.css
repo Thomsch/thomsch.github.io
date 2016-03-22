@@ -1,3 +1,7 @@
+body {
+    background-color: rgba(155, 72, 22, 0.04);
+}
+
 .jumbotron {
     padding:70px 30px 70px 30px;
     margin:0px auto;
@@ -12,56 +16,56 @@
 }
 
 footer {
-    background-color: #AfAfAf;
+    background: #006083;
     margin:0px auto;
     padding: 20px 0px 20px 0px;
+    color:floralwhite;
 }
 
 .content-row {
-    margin:0px auto;
-    padding: 50px 0 50px 0px;
-    border-bottom: 2px ridge;
+    margin: 10px auto;
+    padding: 50px 20px 50px 20px;
     min-height:300px;
+}
+
+.content-separator {
+    border-bottom: 2px ridge;
 }
 
 .project-tile {
     margin:0px auto;
     margin-top:10px;
+    padding: 10px 10px 10px 10px;
     padding-left:20px;
-    border: 2px ridge black;
     min-height: 100px;
+    background-color: rgba(155, 72, 22, 0.1);
 }
 
-.contact-logo {
-    background-color: #838383;
-    display:block;
-    margin:auto;
+.project-tile:hover {
+    background-color: rgba(155, 72, 22, 0.2);
 }
 
- .contact-logo:hover {
-    background-color:#3c3c3c;
+.project-tile-no-hover {
+    margin:0px auto;
+    margin-top:10px;
+    padding: 10px 10px 10px 10px;
+    padding-left:20px;
+    min-height: 100px;
+    background-color: rgba(155, 72, 22, 0.1);
 }
 
-.contact {
-     margin:0px auto;
- }
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
 
-.contact-item {
-    float: left;
-    padding: 20px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px
+a:hover {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
 }
-.contact-item:hover {
-    float: left;
-    padding: 20px;
-    background-color: #2D373D;
-    border-radius: 50%;
-    border: 2px solid rgba(44, 49, 58, 1);
-    margin-left: 10px;
-    -webkit-transition: all .3s;
-    transition: all .3s
+
+
+.contact-tile {
+    border: 2px black;
 }
+

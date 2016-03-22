@@ -8,8 +8,10 @@
 
         <link href="https://fonts.googleapis.com/css?family=Chivo:900" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" type="text/css" href="css/theme.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
 
         <meta name="description" content="Thomas Schweizer Resume Website" />
         <meta name="google" content="notranslate" />
@@ -49,23 +51,37 @@
             </div>
         </header>
 
-        <section id="aboutme" class="container row content-row">
+        <section id="aboutme" class="container row content-row content-separator">
             <h2>About me</h2>
-            <p>Writing clean and readable code.</p>
-            <p>Engineering simple and sustainable designs</p>
-            <p>Users are often stuck with unusable programs. I want change that and make great tools that can be used seamlessly by their users.</p>
-            <p>Learning new technologies by practice</p>
+            <p>My goal is to write simple and clean code.</p>
+            <p>I believe that users are often stuck with unusable programs. I want change that and make great tools that can be used seamlessly by their users.</p>
+            <p>I enjoy learning new framework and languages</p>
+
+            <p style="margin: 40px 0px 0px 0px">Currently looking for a software engineering job in a company that make great and interesting products!</p>
         </section>
 
-        <section id="project" class="container row content-row">
+        <section id="project" class="container row content-row content-separator">
             <h2>Projects</h2>
 
-            <section>
+            <section class="container row">
                 <h3>Cool project I'm working on</h3>
-                <p>I'm currently developing and designing <span>Seshat</span>. This project is a response to the lack of open source class diagrams. With this project, I'm also aiming to upgrade the concept of class diagram and design for program designing.</p>
+                <p>I'm currently developing and designing <span>Seshat</span>. This project is a response to the lack of open source class diagrams.</p>
+                <p>With this project, I'm also aiming to upgrade the concept of class diagram and design for program designing.</p>
+
+                <div class="col-xs-12">
+                    <a href="https://github.com/Thomsch/seshat">
+                        <div class="project-tile">
+                            <h4>Seshat</h4>
+                            <p>Modern class diagram editor</p>
+                        </div>
+                    </a>
+                </div>
             </section>
 
-            <section>
+
+
+
+            <section class="container row">
                 <h3>Past projects</h3>
 
                 <!--
@@ -77,54 +93,67 @@
                      -->
 
                 <div class="col-xs-12">
-                    <div class="project-tile">
-                        <h4>Evolution et vie artificielles</h4>
-                        <p>Bachelor project on artificial life</p>
-                    </div>
+                    <a href="https://github.com/Thomsch/EVA">
+                        <div class="project-tile">
+                            <h4>Evolution et vie artificielles</h4>
+                            <p>Bachelor project on artificial life</p>
+                        </div>
+                    </a>
                 </div> <!-- Put in a large tile at the top -->
 
                 <div class="col-xs-12 col-sm-4">
-                    <div class="project-tile">
+                    <div class="project-tile-no-hover">
                         <h4>PropSim</h4>
                         <p>Highly configurable propagation simulator</p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4">
-                    <div class="project-tile">
-                        <h4>Onapi</h4>
-                        <p>2D shooter & maze mini game</p>
-                    </div>
+                    <a href="https://github.com/Thomsch/onapi">
+                        <div class="project-tile">
+                            <h4>Onapi</h4>
+                            <p>2D shooter & maze mini game</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-xs-12 col-sm-4">
-                    <div class="project-tile">
-                        <h4>Midas</h4>
-                        <p>Accounting software for the whole family</p>
-                    </div>
+                    <a href="https://github.com/Thomsch/PRO">
+                        <div class="project-tile">
+                            <h4>Midas</h4>
+                            <p>Accounting software for the whole family</p>
+                        </div>
+                    </a>
                 </div>
             </section>
         </section>
 
         <section id="contactme" class="container row content-row">
             <h2>I/O</h2>
-            <div class="contact">
-                <div class="col-xs-12 col-sm-2 col-sm-offset-2">
-                    <a class="contact-item" href="http://linkedin.com/in/tschweizer"><img class="contact-logo img-responsive img-circle" src="images/linkedin.png"/></a>
-                </div>
-                <div class="col-xs-12 col-sm-2">
-                    <a class="contact-item" href="https://github.com/Thomsch"><img class="contact-logo img-responsive img-circle" src="images/github.png"/></a>
-                </div>
-                <div class="col-xs-12 col-sm-2">
-                    <a class="contact-item" href="mailto:thms.sch@gmail.com"><img class="contact-logo img-responsive img-circle" src="images/email.png"/></a>
-                </div>
-                <div class="col-xs-12 col-sm-2">
-                    <a class="contact-item" href="files/resume.pdf"><img class="contact-logo img-responsive img-circle" src="images/resume.png"/></a>
-                </div>
+
+            <div class="col-xs-12 col-sm-2 col-sm-offset-2 contact-tile">
+                <a class="btn btn-social-icon btn-linkedin btn-lg" href="https://www.linkedin.com/in/tschweizer" target="_blank">
+                    <span class="fa fa-linkedin"></span>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-2 contact-tile">
+                <a class="btn btn-social-icon btn-github btn-lg" href="https://github.com/Thomsch" target="_blank">
+                    <span class="fa fa-github"></span>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-2 contact-tile">
+                <a class="btn btn-social-icon btn-default btn-lg" href="mailto:thms.sch@gmail.com" target="_blank">
+                    <span class="fa fa-envelope-square"></span>
+                </a> Email
+            </div>
+            <div class="col-xs-12 col-sm-2 contact-tile">
+                <a class="btn btn-social-icon btn-default btn-lg" href="files/resume.pdf" target="_blank">
+                    <span class="fa fa-file"></span>
+                </a> Resume/CV
             </div>
         </section>
 
         <footer>
             <div class="container">
-                <p>This website is a work in progress. Last updated on 22/02/2016</p>
+                <p>This website is a work in progress. Last updated on 22/03/2016</p>
                 <p>Powered by Bootstrap</p>
                 <p>Copyright &copy; Thomas Schweizer 2016</p>
             </div>
