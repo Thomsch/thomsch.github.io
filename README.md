@@ -1,5 +1,5 @@
 # Thomas Schweizer's website
-Personal website to show what I do and have done.
+Personal website to showcase my projects.
 
 You can consult it on http://thomsch.github.io/
 
