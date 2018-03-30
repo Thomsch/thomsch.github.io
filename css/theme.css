@@ -52,18 +52,16 @@ footer {
     background-color: rgba(155, 72, 22, 0.1);
 }
 
-a {
+#project a {
     color: inherit; /* blue colors for links too */
     text-decoration: inherit; /* no underline */
 }
 
-a:hover {
+#project a:hover {
     color: inherit; /* blue colors for links too */
     text-decoration: inherit; /* no underline */
 }
-
 
 .contact-tile {
     border: 2px black;
 }
-
