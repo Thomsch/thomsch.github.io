@@ -62,6 +62,16 @@ footer {
     text-decoration: inherit; /* no underline */
 }
 
+footer a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+footer a:hover {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
 .contact-tile {
     border: 2px black;
 }
