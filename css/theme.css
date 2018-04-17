@@ -42,16 +42,8 @@ footer {
     background-color: rgba(155, 72, 22, 0.1);
 }
 
-.project-tile:hover {
+.project-link:hover {
     background-color: rgba(155, 72, 22, 0.2);
-}
-
-.project-tile-no-hover {
-    margin:0px auto;
-    margin-top:10px;
-    padding: 10px 10px 10px 10px;
-    padding-left:20px;
-    background-color: rgba(155, 72, 22, 0.1);
 }
 
 #project a {
