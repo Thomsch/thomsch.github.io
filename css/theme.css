@@ -55,6 +55,10 @@ footer {
     text-decoration: inherit; /* no underline */
 }
 
+footer {
+    margin-top: 8em;
+}
+
 footer a {
     color: inherit; /* blue colors for links too */
     text-decoration: inherit; /* no underline */
