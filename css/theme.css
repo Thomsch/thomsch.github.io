@@ -25,9 +25,8 @@ footer {
 }
 
 .content-row {
-    margin: 10px auto;
-    padding: 50px 20px 50px 20px;
-    min-height:300px;
+    margin: 0px auto;
+    padding: 20px 0px;
 }
 
 .content-separator {
