@@ -27,7 +27,7 @@ h2, h3 {
     margin: 0;
 }
 
-.project-link:hover {
+.project-tile:hover {
     background-color: rgba(155, 72, 22, 0.2);
 }
 
