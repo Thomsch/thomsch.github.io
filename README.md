@@ -1,2 +1,2 @@
-# Thomas Schweizer's website
-You can consult it on http://thomsch.github.io/
+# Welcome to my website's source code
+It's live at http://thomsch.github.io/
