@@ -10,10 +10,8 @@ body {
     margin: 0;
     padding: 0;
 
-    height: 100vh;
-    min-height: 100vh;
-    width: 100vw;
-    min-width: 100vw;
+    height: 100%;
+    width: 100%;
 }
 
 .debug {
@@ -21,17 +19,26 @@ body {
 }
 
 #menu {
+    position:absolute;
+    top:20px;
+
     text-align: end;
+    list-style-type: none;
+
     text-decoration-line: none;
-    font-size: 48px;
+    font-size: 42px;
     word-spacing: 0.5em;
-    margin: 0%;
-    margin-right: 1.5em;
-    margin-top: 1.33333em;
+    margin: 0;
+    right: 32px;
+    top:270px;
 }
 
 #menu li {
-    display:inline;
+    margin-top: 52px;
+}
+
+#menu li:first-child {
+    margin-top: 0;
 }
 
 #menu a {
@@ -46,38 +53,31 @@ body {
     border-bottom-width: 4px;
 } 
 
-#home-container {
+#name-container {
     position: relative;
-    margin-left: 4.5714em;
-    margin-top: 14vh;
+    margin: 32px;
 }
 
 .name {
     font-style: normal;
     font-weight: 500;
-    font-size: 144px;
+    font-size: 58px;
     line-height: normal;
-
-    width: 100%;
 
     text-shadow: 0px 4px 4px #05C46B;
 
     align-self: center;
 }
 
-.last-name {
-    text-indent: 1em;
-}
-
 .social {
-    position:absolute;
+    position: absolute;
     display: block;
-    bottom: 0;
-    left: 80vw;
+    left: 20vw;
 
     width: 0.5em;
-    height: 70vh;
+    height: calc(100vh - 200px);
     background: #05C46B;
+    bottom: 0;
 
     white-space: nowrap;
 }
@@ -90,7 +90,6 @@ body {
     margin: 0%;
     padding: 0;
     list-style: none;
-    margin-top: 0.5em;
 }
 
 .social-links li {
@@ -100,8 +99,12 @@ body {
     -moz-border-radius: 0.75em;
     border-radius: 0.75em;
     background: #4C4F51;
+    margin-top: 32px;
     transform: translateX(-0.68em);
-    margin-top: 1em;
+}
+
+.social-links li:first-child {
+    margin-top: 0em;
 }
 
 .social-links li a {
@@ -121,4 +124,68 @@ body {
     right: 0;
     margin-bottom: 1em;
     margin-right: 2em;
+}
+
+/* Tiny phones */
+@media only screen and (max-width:360px) {
+    .social li {
+        margin-top: 16px;
+    }
+
+    #menu {
+        font-size: 2.3em;
+    }
+}
+ 
+/* Tablets */
+@media only screen and (min-width:600px) {
+    .name {
+        font-size: 102px;
+    }
+
+    .social {
+        height: calc(100vh - 300px);
+    }
+
+    #menu {
+        font-size: 48px;
+        top: 370px;
+    }
+}
+
+/* Desktops */
+@media only screen and (min-width:1024px) {
+
+    #home-container {
+        position: relative;
+        margin-left: 4.5714em;
+        margin-top: 14vh;
+    }
+
+    .name {
+        font-size: 144px;
+    }
+
+    .last-name {
+        text-indent: 1em;
+    }
+
+    #menu {
+        top: 32px;
+    }
+    
+    #menu li {
+        display:inline;
+    }
+    
+    .social {
+        left: 80vw;
+    
+        width: 0.5em;
+        height: 70vh;
+    }
+
+    .social-links {
+        margin-top: 0.5em;
+    }
 }
