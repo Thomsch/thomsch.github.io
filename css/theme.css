@@ -148,22 +148,18 @@ body {
     }
 
     #menu {
-        font-size: 48px;
+
         top: 370px;
     }
 }
 
-/* Desktops */
+/* Desktop */
 @media only screen and (min-width:1200px) {
 
     #name-container {
         position: relative;
         margin-left: 4.5714em;
         margin-top: 14vh;
-    }
-
-    .name {
-        font-size: 144px;
     }
 
     .last-name {
@@ -179,7 +175,7 @@ body {
     }
     
     .social {
-        left: 80vw;
+        left: 70vw;
     
         width: 0.5em;
         height: 70vh;
@@ -188,4 +184,16 @@ body {
     .social-links {
         margin-top: 0.5em;
     }
+}
+
+/* Large desktops */
+@media only screen and (min-width:1400px) {
+
+    #menu {
+        font-size: 48px;
+    }
+    .name {
+        font-size: 144px;
+    }
+
 }
