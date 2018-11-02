@@ -154,9 +154,9 @@ body {
 }
 
 /* Desktops */
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width:1200px) {
 
-    #home-container {
+    #name-container {
         position: relative;
         margin-left: 4.5714em;
         margin-top: 14vh;
@@ -171,7 +171,7 @@ body {
     }
 
     #menu {
-        top: 32px;
+        top: 64px;
     }
     
     #menu li {
