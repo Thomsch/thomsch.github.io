@@ -3,13 +3,10 @@ body {
     font-size: 14px;
     background: #F4F4F6;
     color: #4C4F51;
-    
     position: absolute;
     display: block;
-
     margin: 0;
     padding: 0;
-
     height: 100%;
     width: 100%;
 }
@@ -17,41 +14,6 @@ body {
 .debug {
     border: 3px solid blueviolet;
 }
-
-#menu {
-    position:absolute;
-    top:20px;
-
-    text-align: end;
-    list-style-type: none;
-
-    text-decoration-line: none;
-    font-size: 42px;
-    word-spacing: 0.5em;
-    margin: 0;
-    right: 32px;
-    top:270px;
-}
-
-#menu li {
-    margin-top: 52px;
-}
-
-#menu li:first-child {
-    margin-top: 0;
-}
-
-#menu a {
-    text-decoration-line: inherit;
-    color: inherit;
-    border: 0;
-    border-style: solid;
-}
-
-#menu a:hover {
-    border-bottom-color: #05C46B;
-    border-bottom-width: 4px;
-} 
 
 #name-container {
     position: relative;
@@ -63,9 +25,7 @@ body {
     font-weight: 500;
     font-size: 58px;
     line-height: normal;
-
     text-shadow: 0px 4px 4px #05C46B;
-
     align-self: center;
 }
 
@@ -73,12 +33,10 @@ body {
     position: absolute;
     display: block;
     left: 20vw;
-
     width: 0.5em;
     height: calc(100vh - 200px);
     background: #05C46B;
     bottom: 0;
-
     white-space: nowrap;
 }
 
@@ -117,9 +75,7 @@ body {
 .copyright {
     position: absolute;
     display: block;
-
     width: fit-content;
-    
     bottom: 0;
     right: 0;
     margin-bottom: 1em;
@@ -127,73 +83,49 @@ body {
 }
 
 /* Tiny phones */
+
 @media only screen and (max-width:360px) {
     .social li {
         margin-top: 16px;
     }
-
-    #menu {
-        font-size: 2.3em;
-    }
 }
- 
+
 /* Tablets */
+
 @media only screen and (min-width:600px) {
     .name {
         font-size: 102px;
     }
-
     .social {
         height: calc(100vh - 300px);
-    }
-
-    #menu {
-
-        top: 370px;
     }
 }
 
 /* Desktop */
-@media only screen and (min-width:1200px) {
 
+@media only screen and (min-width:1200px) {
     #name-container {
         position: relative;
         margin-left: 4.5714em;
         margin-top: 14vh;
     }
-
     .last-name {
         text-indent: 1em;
     }
-
-    #menu {
-        top: 64px;
-    }
-    
-    #menu li {
-        display:inline;
-    }
-    
     .social {
         left: 70vw;
-    
         width: 0.5em;
         height: 70vh;
     }
-
     .social-links {
         margin-top: 0.5em;
     }
 }
 
 /* Large desktops */
-@media only screen and (min-width:1400px) {
 
-    #menu {
-        font-size: 48px;
-    }
+@media only screen and (min-width:1400px) {
     .name {
         font-size: 144px;
     }
-
 }
