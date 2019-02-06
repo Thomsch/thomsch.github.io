@@ -1,2 +1,4 @@
-# Welcome to my website's source code
-It's live at http://thomsch.github.io/
+# Personal webpage
+Feel free to take a look at the source code! Suggestions are always welcome.
+
+Live at http://thomsch.github.io/
