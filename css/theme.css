@@ -9,22 +9,27 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
+
+    height: 100%;
+    margin: 0;
+
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    line-height: normal;  
 }
 
-.debug {
-    border: 3px solid blueviolet;
+.box {
+    height: 100%;   
 }
 
 #name-container {
     position: relative;
-    margin: 32px;
+    padding: 32px;
 }
 
 .name {
-    font-style: normal;
-    font-weight: 500;
     font-size: 58px;
-    line-height: normal;
     text-shadow: 0px 4px 4px #05C46B;
     align-self: center;
 }
@@ -73,14 +78,46 @@ body {
 }
 
 .copyright {
-    position: absolute;
-    display: block;
-    width: fit-content;
+    position: fixed;
+
+    padding-right: 1em;
+    padding-bottom: 1em;
+
     bottom: 0;
     right: 0;
-    margin-bottom: 1em;
-    margin-right: 2em;
 }
+.about {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.about > .social {
+    height: 100%;
+    z-index: -1;
+}
+
+.caption {
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    background:rgba(244, 244, 246, 0.7);
+    font-size: 16px;
+
+    top: 20%;
+  }
+
+.caption > p {
+    padding: 20px;
+}
+
+.current-occupation {
+    margin-top: 50%;
+}
+  
 
 /* Tiny phones */
 
@@ -104,6 +141,11 @@ body {
 /* Desktop */
 
 @media only screen and (min-width:1000px) {
+
+    .caption {
+        max-width: 1000px;
+        padding-left: 48px;
+    }
     .box {
         display: -webkit-box;
         display: -ms-flexbox;
