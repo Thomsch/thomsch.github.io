@@ -145,6 +145,7 @@ body {
     .caption {
         max-width: 1000px;
         padding-left: 48px;
+        font-size: 1.5em;
     }
     .box {
         display: -webkit-box;
