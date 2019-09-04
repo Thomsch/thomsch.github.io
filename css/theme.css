@@ -53,7 +53,6 @@ small {
     text-align: end;
     text-decoration-line: none;
     font-size: 48px;
-    word-spacing: 0.5em;
     margin: 0%;
     padding: 0;
     list-style: none;
@@ -80,6 +79,27 @@ small {
     border: 0;
     border-style: solid;
 }
+
+.social-links li .tooltip {
+    visibility: hidden;
+    background-color: #4C4F51;;
+    color: #fff;
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 6px;
+    position: absolute;
+   
+    /* Position the tooltip text - see examples below! */
+    top: 15px;
+    left: 120%; 
+
+    font-size: 0.5em;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .social-links li:hover .tooltip {
+    visibility: visible;
+  }
 
 .copyright {
     position: fixed;
