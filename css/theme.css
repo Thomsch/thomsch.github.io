@@ -82,8 +82,9 @@ small {
 
 .social-links li .tooltip {
     visibility: hidden;
-    background-color: #4C4F51;;
+    background-color: rgba(76, 79, 81, 0.6);;
     color: #fff;
+    opacity: 50%;
     text-align: center;
     padding: 5px 5px;
     border-radius: 6px;
