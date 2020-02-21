@@ -1,61 +1,39 @@
 body,
 main {
-  font-family: "Fira Sans", sans-serif;
-  font-size: 14px;
-  background: #fcfcfc;
+  font-family: "Roboto Mono", monospace;
+  /* line-height: 1.4; */
+  /* font-size: 16px; */
   color: #3b3d3f;
-  position: absolute;
-  display: block;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-
-  font-style: normal;
-  line-height: normal;
-  font-weight: 500;
 }
 
-small {
-  font-size: inherit;
+header {
+  text-shadow: 0px 2px 2px #05c46b;
+  text-align: center;
+  /* font-weight: 200; */
 }
 
-.box {
-  height: 100%;
+.container {
+  margin: 50px auto;
+  max-width: 800px;
 }
 
-#name-container {
-  position: relative;
-  padding: 32px;
+@media (max-width: 850px) {
+  .container {
+    padding: 30px;
+  }
 }
 
-.name {
-  font-size: 58px;
-  text-shadow: 0px 4px 4px #05c46b;
-  align-self: center;
+nav {
+  text-align: center;
+  margin: 50px 0;
 }
 
-.social {
-  position: absolute;
-  display: block;
-  left: 20vw;
-  width: 0.5em;
-  height: calc(100vh - 200px);
-  background: #05c46b;
-  bottom: 0;
-  white-space: nowrap;
+footer {
+  text-align: center;
+  margin-top: 50px;
 }
 
-.social-links {
-  text-align: end;
-  text-decoration-line: none;
-  font-size: 48px;
-  margin: 0%;
-  padding: 0;
-  list-style: none;
-}
-
-.social-links li {
+/* img {
   width: 1.5em;
   height: 1.5em;
   -webkit-border-radius: 0.75em;
@@ -64,9 +42,9 @@ small {
   background: #3b3d3f;
   margin-top: 32px;
   transform: translateX(-0.68em);
-}
+} */
 
-.social-links li:first-child {
+/* .social-links li:first-child {
   margin-top: 0em;
 }
 
@@ -75,9 +53,9 @@ small {
   color: inherit;
   border: 0;
   border-style: solid;
-}
+} */
 
-.social-links li .tooltip {
+/* .social-links li .tooltip {
   visibility: hidden;
   background-color: #3b3d3f;
   color: #f4f4f6;
@@ -86,144 +64,21 @@ small {
   border-radius: 6px;
   position: absolute;
 
-  /* Position the tooltip text - see examples below! */
+   Position the tooltip text - see examples below!
   top: 15px;
   left: 120%;
 
   font-size: 0.5em;
-}
+} */
 
 /* Show the tooltip text when you mouse over the tooltip container */
-.social-links li:hover .tooltip {
+/* .social-links li:hover .tooltip {
   visibility: visible;
-}
-
-.copyright {
-  position: fixed;
-
-  padding-right: 1em;
-  padding-bottom: 1em;
-
-  bottom: 0;
-  right: 0;
-}
-.about {
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-}
-
-.about > .social {
-  height: 100%;
-  z-index: -1;
-}
-
-.caption {
-  position: absolute;
-  width: 100%;
-  text-align: left;
-  background: rgba(244, 244, 246, 0.7);
-  font-size: 16px;
-
-  top: 20%;
-}
-
-.caption > p {
-  padding: 20px;
-}
-
-.current-occupation {
-  margin-top: 50%;
-}
+} */
 
 /*
     Academic work
 */
-.article {
-  margin-bottom: 1.5em;
-}
-
-.articles {
-  margin: 10vh 15vw;
-  word-wrap: break-word;
-}
-
-.articles h1 {
-  margin-top: 1.5em;
-}
-
-.articles ul {
-  margin-top: 0.25em;
-}
-
-/* Tiny phones */
-
-@media only screen and (max-width: 360px) {
-  .social li {
-    margin-top: 16px;
-  }
-}
-
-/* Tablets */
-
-@media only screen and (min-width: 600px) {
-  .name {
-    font-size: 102px;
-  }
-  .social {
-    height: calc(100vh - 300px);
-  }
-}
-
-/* Desktop */
-
-@media only screen and (min-width: 1000px) {
-  .caption {
-    max-width: 1000px;
-    padding-left: 48px;
-    font-size: 1.5em;
-  }
-
-  .box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100%;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-  }
-
-  #name-container {
-    position: relative;
-    margin-left: 4.5714em;
-  }
-  .last-name {
-    text-indent: 1em;
-  }
-  .social {
-    left: 80vw;
-    width: 0.5em;
-    height: 80vh;
-  }
-  .social-links {
-    margin-top: 0.5em;
-  }
-}
-
-/* Large desktops */
-
-@media only screen and (min-width: 1400px) {
-  .name {
-    font-size: 144px;
-  }
-
-  .articles {
-    margin: 10vh 5vw;
-  }
+.research-main {
+  margin-top: 50px;
 }
