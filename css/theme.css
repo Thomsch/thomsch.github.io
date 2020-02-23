@@ -28,53 +28,21 @@ nav {
   margin: 50px 0;
 }
 
+nav a {
+  display: inline-block;
+  vertical-align: bottom;
+
+  margin: 10px;
+}
+
+nav a img {
+  vertical-align: bottom;
+}
+
 footer {
   text-align: center;
   margin-top: 50px;
 }
-
-/* img {
-  width: 1.5em;
-  height: 1.5em;
-  -webkit-border-radius: 0.75em;
-  -moz-border-radius: 0.75em;
-  border-radius: 0.75em;
-  background: #3b3d3f;
-  margin-top: 32px;
-  transform: translateX(-0.68em);
-} */
-
-/* .social-links li:first-child {
-  margin-top: 0em;
-}
-
-.social-links li a {
-  text-decoration-line: inherit;
-  color: inherit;
-  border: 0;
-  border-style: solid;
-} */
-
-/* .social-links li .tooltip {
-  visibility: hidden;
-  background-color: #3b3d3f;
-  color: #f4f4f6;
-  text-align: center;
-  padding: 5px 5px;
-  border-radius: 6px;
-  position: absolute;
-
-   Position the tooltip text - see examples below!
-  top: 15px;
-  left: 120%;
-
-  font-size: 0.5em;
-} */
-
-/* Show the tooltip text when you mouse over the tooltip container */
-/* .social-links li:hover .tooltip {
-  visibility: visible;
-} */
 
 /*
     Academic work
