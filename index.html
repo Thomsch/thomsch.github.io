@@ -2,15 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Fira+Sans"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet" />
 
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="css/theme.css" />
@@ -19,101 +13,57 @@
     <meta name="google" content="notranslate" />
     <meta
       name="keywords"
-      content="Thomas, Schweizer, resume, CV, website, resume website, curriculum vitae"
+      content="Thomas, Schweizer, resume, CV, website, resume website, curriculum vitae, homepage"
     />
     <meta name="author" content="Thomas Schweizer" />
 
     <title>Thomas Schweizer</title>
   </head>
 
-  <body>
-    <main>
-      <header class="box">
-        <div id="name-container">
-          <div class="name">Thomas</div>
-          <div class="name last-name">Schweizer</div>
-        </div>
-      </header>
+  <body class="container">
+    <header>
+      <h1>Thomas Schweizer</h1>
+    </header>
 
-      <nav class="social">
-        <ul class="social-links">
-          <li>
-            <a href="https://github.com/thomsch" target="_blank"
-              ><img src="images/github.svg" height="72px" width="72px"
-            /></a>
+    <nav>
+      <a href="https://github.com/thomsch" target="_blank"><img src="images/github.svg" height="40px" width="40px"/></a>
+      <!-- <span class="tooltip">Github profile</span> -->
+      <a href="research.html" target="_blank"><img src="images/pen.svg" height="40px" width="40px"/></a>
+      <!-- <span class="tooltip">Academic articles</span> -->
+      <a href="https://linkedin.com/in/tschweizer"><img src="images/linkedin.svg" height="40px" width="40px"/></a>
+      <!-- <span class="tooltip">Linkedin profile</span> -->
+      <a href="mailto:thms.sch@gmail.com" target="_blank"><img src="images/mail.svg" height="40px" width="40px"/></a>
+      <!-- <span class="tooltip">Email</span> -->
+      <a href="files/resume.pdf" target="_blank"><img src="images/resume.svg" height="40px" width="40px"/></a>
+      <!-- <span class="tooltip">Resume</span> -->
+    </nav>
 
-            <span class="tooltip">Github profile</span>
-          </li>
-          <li>
-            <a href="articles.html" target="_blank"
-              ><img src="images/pen.svg" height="72px" width="72px"
-            /></a>
+    <section class="bio">
+      <p>
+        My mission is to empower people and improve their lives by building software. I believe technology should adapt
+        to their users and not the otherway around. <br />
+        I'm particularly interested in the interaction between Software Engineering and Machine Learning systems, from
+        the design to their deployment and how they impact society.
+      </p>
 
-            <span class="tooltip">Academic articles</span>
-          </li>
-          <li>
-            <a href="https://linkedin.com/in/tschweizer"
-              ><img src="images/linkedin.svg" height="72px" width="72px"
-            /></a>
+      <p>
+        I'm a graduate student completing my Master's degree at the
+        <a href="https://diro.umontreal.ca/accueil/">University of Montreal</a>. My research advisor is
+        <a href="https://michalis.famelis.info/">Michalis Famelis</a>. We are researching approaches to automatically
+        identify design related changes through the evolution of software metrics in projects. I've also been working
+        since 2014 with the <a href="www.digger.ch">Digger Foundation</a>, a humanitarian company, where I design,
+        develop, and deploy software systems to detect and eliminate
+        <a href="https://en.wikipedia.org/wiki/Land_mine">landmines</a>.
+      </p>
 
-            <span class="tooltip">Linkedin profile</span>
-          </li>
-          <li>
-            <a href="mailto:thms.sch@gmail.com" target="_blank"
-              ><img src="images/mail.svg" height="72px" width="72px"
-            /></a>
-
-            <span class="tooltip">Email</span>
-          </li>
-          <li>
-            <a href="files/resume.pdf" target="_blank"
-              ><img src="images/resume.svg" height="72px" width="72px"
-            /></a>
-
-            <span class="tooltip">Resume</span>
-          </li>
-        </ul>
-      </nav>
-
-      <section class="about">
-        <div class="caption">
-          <p>
-            My mission is to empower people and improve their lives by building
-            software. I believe technology should adapt to their users and not
-            the otherway around. <br />
-            I'm particularly interested in the interaction between Software
-            Engineering and Machine Learning systems, from the design to their
-            deployment and how they impact society.
-          </p>
-
-          <p>
-            I'm a graduate student completing my Master's degree at the
-            <a href="https://diro.umontreal.ca/accueil/"
-              >University of Montreal</a
-            >. My research advisor is
-            <a href="https://michalis.famelis.info/">Michalis Famelis</a>. We
-            are researching approaches to automatically identify design related
-            changes through the evolution of software metrics in projects. I've
-            also been working since 2014 with the
-            <a href="www.digger.ch">Digger Foundation</a>, a humanitarian
-            company, where I design, develop, and deploy software systems to
-            detect and eliminate
-            <a href="https://en.wikipedia.org/wiki/Land_mine">landmines</a>.
-          </p>
-
-          <p>
-            My other topics of interest AI (e.g., Software Biomimicry, Emergent
-            Behaviors, Neural Networks), Software Engineering, Data Science, and
-            UI/UX design.
-          </p>
-        </div>
-
-        <div class="social"></div>
-      </section>
-    </main>
+      <p>
+        My other topics of interest are AI (e.g., Software Biomimicry, Emergent Behaviors, Neural Networks), Software
+        Engineering, Data Science, and UI/UX design. I'm also an avid book reader and hiker :).
+      </p>
+    </section>
 
     <footer>
-      <small class="copyright">
+      <small>
         &copy;
         <script type="text/javascript">
           document.write(new Date().getFullYear())
@@ -135,13 +85,7 @@
         a.async = 1
         a.src = g
         m.parentNode.insertBefore(a, m)
-      })(
-        window,
-        document,
-        "script",
-        "https://www.google-analytics.com/analytics.js",
-        "ga"
-      )
+      })(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga")
 
       ga("create", "UA-83140505-1", "auto")
       ga("send", "pageview")
