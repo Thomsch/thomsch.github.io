@@ -1,4 +1,4 @@
-# Personal webpage
-Feel free to take a look at the source code! Suggestions are always welcome.
+# Personal website
+Personal website build with Github Pages.
 
 Live at http://thomsch.github.io/
