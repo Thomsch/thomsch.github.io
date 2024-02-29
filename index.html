@@ -56,8 +56,13 @@
             text-align: right; /* Right-align the links */
         }
 
-        .links a:hover {
+        a:hover {
             text-decoration: underline; /* Re-add underline on hover for feedback */
+        }
+
+        a {
+            color: #05C46B; /* Your chosen color */
+            text-decoration: none;
         }
 
         .links a {
@@ -155,6 +160,18 @@
             width: 100%;
             padding: 20px 0; /* Adjust padding as needed */
         }
+
+        .news-list li {
+    display: flex; /* Makes the list item a flex container */
+    align-items: baseline; /* Aligns items on their baseline for a consistent look */
+    margin-bottom: 10px; /* Adds some space between the list items */
+}
+
+.news-date {
+    flex-shrink: 0; /* Prevents the date from shrinking */
+    width: 100px; /* Specifies a fixed width for the date */
+    margin-right: 10px; /* Adds some space between the date and the description */
+}
     </style>
 </head>
 <body>
@@ -188,8 +205,22 @@
 <div class="section">
     <div class="news-title">News</div>
     <ul class="news-list">
-        <li><span class="news-date">JAN 2024</span> Description of news item one.</li>
-        <li><span class="news-date">FEB 2024</span> Description of news item two.</li>
+        <li><span class="news-date">JAN 2024</span>
+            <span>Deployed automated code reviewer powered by LLM (<a target="_blank" href="https://www.code-review-assistant.app/">code-review-assistant.app</a>).</span>
+        </li>
+        <li>
+            <span class="news-date">AUG 2023</span>
+            <span>Submitted our paper titled "Evaluating Untangling Tools" to ICSE 2024.</span>
+        </li>
+        <li>
+            <span class="news-date">JUL 2023</span>
+            <span>Won the <strong>first place</strong> at the ISSTA ACM Student
+            Research Competition for my research on evaluating commit untangling tools.</span>
+        </li>
+        <li><span class="news-date">MAR 2023</span>
+            <span>Won the Fixie.AI hackathon by building an AI agent using LLMs that draft email replies direclty in your
+                Gmail inbox.</span>
+        </li>
         <!-- Add more news items here -->
     </ul>
 </div>
