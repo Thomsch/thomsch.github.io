@@ -1,95 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83140505-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  <head>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83140505-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-    gtag('config', 'UA-83140505-1');
-  </script>
+        gtag('js', new Date());
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet" />
+        gtag('config', 'UA-83140505-1');
+    </script>
 
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="css/theme.css" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!--    <link rel="stylesheet" type="text/css" href="css/theme.css" />-->
 
-    <meta name="description" content="Thomas Schweizer's Website" />
-    <meta name="google" content="notranslate" />
-    <meta name="keywords" content="Thomas, Schweizer, Thomsch, resume, CV, website, resume website, curriculum vitae, homepage" />
-    <meta name="author" content="Thomas Schweizer" />
-
+    <meta name="description" content="Thomas Schweizer's Website"/>
+    <meta name="google" content="notranslate"/>
+    <meta name="keywords"
+          content="Thomas, Schweizer, Thomsch, resume, CV, website, resume website, curriculum vitae, homepage"/>
+    <meta name="author" content="Thomas Schweizer"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thomas Schweizer</title>
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="css/theme.css"/>
+</head>
+<body>
+<div class="header">
+    <div class="header-info">
+        <div class="name">Thomas Schweizer <span class="pronouns">(he/him)</span></div>
+        <div id="ep" class="email"></div>
+    </div>
+    <div class="links">
+        <a href="https://github.com" aria-label="GitHub">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://linkedin.com" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+    </div>
+</div>
+<hr/>
+<div class="section">
+    <p>
+        I am passionate about leveraging Machine Learning and Data Science to build reliable, sustainable, and ethical
+        software that prioritizes the users' needs.
+    </p>
+    <p>
+        At the University of Washington, I research ways to empower developers to write better and safer code by
+        leveraging source code analysis and machine learning techniques on the code's version history.
+    </p>
+</div>
+<hr/>
+<div class="section">
+    <div class="news-title">HIGHLIGHTS</div>
+    <ul class="news-list">
+        <li><span class="news-date">JAN 2024</span>
+            <span>Deployed automated code reviewer powered by LLM (<a target="_blank"
+                                                                      href="https://www.code-review-assistant.app/">code-review-assistant.app</a>).</span>
+        </li>
+        <li>
+            <span class="news-date">AUG 2023</span>
+            <span>Submitted our paper titled "Evaluating Untangling Tools" to ICSE 2024.</span>
+        </li>
+        <li>
+            <span class="news-date">JUL 2023</span>
+            <span>Won the <strong>first place</strong> at the ISSTA ACM Student
+            Research Competition for my research on evaluating commit untangling tools.</span>
+        </li>
+        <li><span class="news-date">MAR 2023</span>
+            <span>Won the Fixie.AI hackathon by building an AI agent using LLMs that draft email replies direclty in your
+                Gmail inbox.</span>
+        </li>
+        <!-- Add more news items here -->
+    </ul>
+</div>
+<hr/>
+<footer>
+    <div id="wcb" class="carbonbadge"></div>
+    <div>
+        <small>
+            <span>
+                &copy;
+                <script type="text/javascript">
+                    document.write(" " + new Date().getFullYear() + " ")
+                </script>
+                Thomas Schweizer
+            </span>
+        </small>
+    </div>
+</footer>
+<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
 
-  <body class="container">
-    <header>
-      <h1>Thomas Schweizer</h1>
-    </header>
+<script type="text/javascript">
+    <!-- Email obfuscation -->
+    var dataMap = {
+        'x3': '@gm', 'x1': 'sch', 'm1': 'ail', 'x2': 'wei',
+        'z1': 'mas', 'y2': '.co', 'y1': 'tho', 'z2': '.r.',
+        'x4': 'zer', 'm2': 'm', 'y3': 'to:', 'm0': 'mai', 'y4': 'l'
+    };
 
-    <nav>
-      <a href="research.html">publications</a>
-      <a href="files/resume.pdf" target="_blank">resume</a>
-      <a href="https://github.com/thomsch" target="_blank">github</a>
-      <a href="https://linkedin.com/in/tschweizer">linkedin</a>
-      <a href="mailto:thms.sch@gmail.com" target="_blank">email</a>
-    </nav>
+    var c = dataMap['m0'] + dataMap['y3'] + dataMap['y4'];
+    var a = dataMap['y1'] + dataMap['z1'] + dataMap['z2'] + dataMap['x1'] + dataMap['x2'] + dataMap['x4'];
+    var z = dataMap['x3'] + dataMap['m1'] + dataMap['y2'] + dataMap['m2'];
 
-    <section class="bio">
-      <p>
-        My mission is to empower people and improve their lives through intuitive and reliable software.
-        I believe technology should adapt to its users and not the other way around.
-
-        <b>I'm particularly interested in leveraging Machine Learning and Data Science to build the next generation of
-          reliable, sustainable and ethical software systems and tools.</b>
-        <!--
-          I'm particularly interested in the interaction between Software Engineering and Machine Learning systems, from
-          the design to their deployment and how they impact society.
-        -->
-      </p>
-
-      <p>
-        I’m a PhD candidate at the University of Washington <a href="https://www.cs.washington.edu/">Paul G. Allen School
-          of Computer Science & Engineering</a> working on improving program comprehension by extracting natural semantics
-        from source code with Professors
-        <a href="https://homes.cs.washington.edu/~mernst/">Michael Ernst</a> and
-        <a href="https://homes.cs.washington.edu/~rjust/">René Just</a>.
-      </p>
-
-      <p>
-        Previously, I worked at <a href="https://mila.quebec/">Mila</a> where I developed the visualization features and
-        REST API of <a href="https://mila.quebec/en/article/improved-deep-learning-workflows-through-hyperparameter-optimization-with-orion/">Oríon</a>
-        - an hyperparameter optimizer for machine learning - to drive cutting-edge research in the domain of machine
-        learning and its implementation in production.
-        In June 2020, I graduated from the <a href="https://diro.umontreal.ca/accueil/">University of Montreal</a> with a Masters in Computer Science.
-
-        My advisor, Professor <a href="https://michalis.famelis.info/">Michalis Famelis</a>, and I researched approaches to automatically identify design-related changes through the evolution of software metrics in projects.
-
-        I've also been working since 2014 for the <a href="www.digger.ch">Digger Foundation</a>, a
-        humanitarian company, where I design, develop, and deploy software systems to detect and eliminate
-        <a href="https://en.wikipedia.org/wiki/Land_mine">landmines</a>.
-      </p>
-
-      <p>
-        Alongside Software Engineering, Machine Learning, and Data Science, I'm interested in UI/UX design,
-        and Complex Systems. I'm also an avid book reader and hiker :).
-      </p>
-    </section>
-
-    <footer>
-      <small>
-        &copy;
-        <script type="text/javascript">
-          document.write(new Date().getFullYear())
-        </script>
-        Thomas Schweizer
-      </small>
-    </footer>
-  </body>
+    // Create a mailto link and append it to a placeholder in the document
+    var element = document.createElement('a');
+    element.href = c + a + z;
+    element.innerHTML = a + z;
+    document.getElementById('ep').appendChild(element);
+</script>
+</body>
 </html>
