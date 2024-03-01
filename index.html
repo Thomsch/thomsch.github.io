@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83140505-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-83140505-1');
     </script>
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<!--    <link rel="stylesheet" type="text/css" href="css/theme.css" />-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!--    <link rel="stylesheet" type="text/css" href="css/theme.css" />-->
 
-    <meta name="description" content="Thomas Schweizer's Website" />
-    <meta name="google" content="notranslate" />
-    <meta name="keywords" content="Thomas, Schweizer, Thomsch, resume, CV, website, resume website, curriculum vitae, homepage" />
-    <meta name="author" content="Thomas Schweizer" />
+    <meta name="description" content="Thomas Schweizer's Website"/>
+    <meta name="google" content="notranslate"/>
+    <meta name="keywords"
+          content="Thomas, Schweizer, Thomsch, resume, CV, website, resume website, curriculum vitae, homepage"/>
+    <meta name="author" content="Thomas Schweizer"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thomas Schweizer</title>
@@ -43,7 +48,7 @@
             border: 0;
             height: 0.1rem;
             background: #ccc;
-            margin: 20px 0;
+            margin: 30px 0;
         }
 
         .section, .header {
@@ -130,6 +135,50 @@
             display: inline-block;
             width: 80px; /* Adjust this width as needed */
             margin-right: 10px; /* Adds some space between the date and description */
+            text-align: justify;
+            flex-shrink: 0; /* Prevents the date from shrinking */
+            text-justify: inter-word;
+            height: 1em;
+        }
+
+        .news-date:after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+        }
+
+
+        p {
+            letter-spacing: 0.05rem; /* Increases the letter spacing */
+            line-height: 1.25 /* This will make the line height 1.5 times the size of the text font */
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .news-list li {
+            display: flex; /* Makes the list item a flex container */
+            align-items: baseline; /* Aligns items on their baseline for a consistent look */
+            margin-bottom: 10px; /* Adds some space between the list items */
+        }
+
+        footer {
+            display: flex; /* Enables flexbox layout */
+            justify-content: space-between; /* Positions children at start and end */
+            align-items: center; /* Centers children vertically */
+        }
+
+        footer > div, footer > div > small {
+            display: flex;
+            align-items: center; /* Ensures text and any child elements are also centered vertically */
+        }
+
+        .carbonbadge {
+            font-size: x-small !important; /* Scales down the font size */
         }
 
         /* Mobile-friendly adjustments */
@@ -161,44 +210,6 @@
             }
         }
 
-        p {
-            letter-spacing: 0.05rem; /* Increases the letter spacing */
-            line-height: 1.25 /* This will make the line height 1.5 times the size of the text font */
-        }
-
-        footer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-        }
-
-        .news-list li {
-    display: flex; /* Makes the list item a flex container */
-    align-items: baseline; /* Aligns items on their baseline for a consistent look */
-    margin-bottom: 10px; /* Adds some space between the list items */
-}
-
-.news-date {
-    flex-shrink: 0; /* Prevents the date from shrinking */
-    width: 100px; /* Specifies a fixed width for the date */
-    margin-right: 10px; /* Adds some space between the date and the description */
-}
-
-footer {
-    display: flex; /* Enables flexbox layout */
-    justify-content: space-between; /* Positions children at start and end */
-    align-items: center; /* Centers children vertically */
-}
-
-footer > div, footer > div > small {
-    display: flex;
-    align-items: center; /* Ensures text and any child elements are also centered vertically */
-}
-
-.carbonbadge {
-    font-size: x-small !important; /* Scales down the font size */
-}
     </style>
 </head>
 <body>
@@ -233,7 +244,8 @@ footer > div, footer > div > small {
     <div class="news-title">News</div>
     <ul class="news-list">
         <li><span class="news-date">JAN 2024</span>
-            <span>Deployed automated code reviewer powered by LLM (<a target="_blank" href="https://www.code-review-assistant.app/">code-review-assistant.app</a>).</span>
+            <span>Deployed automated code reviewer powered by LLM (<a target="_blank"
+                                                                      href="https://www.code-review-assistant.app/">code-review-assistant.app</a>).</span>
         </li>
         <li>
             <span class="news-date">AUG 2023</span>
