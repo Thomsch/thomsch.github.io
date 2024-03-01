@@ -146,6 +146,19 @@
             .links {
                 margin-top: 20px;
             }
+
+            footer {
+                flex-direction: column; /* Stacks items vertically on small screens */
+            }
+
+            footer > div, footer > div > small {
+                justify-content: center; /* Aligns items to the left */
+            }
+
+            footer > div {
+                width: 100%; /* Ensures full width for alignment */
+                margin-bottom: 10px; /* Adds space between the stacked items */
+            }
         }
 
         p {
@@ -158,7 +171,6 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            padding: 20px 0; /* Adjust padding as needed */
         }
 
         .news-list li {
@@ -171,6 +183,21 @@
     flex-shrink: 0; /* Prevents the date from shrinking */
     width: 100px; /* Specifies a fixed width for the date */
     margin-right: 10px; /* Adds some space between the date and the description */
+}
+
+footer {
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Positions children at start and end */
+    align-items: center; /* Centers children vertically */
+}
+
+footer > div, footer > div > small {
+    display: flex;
+    align-items: center; /* Ensures text and any child elements are also centered vertically */
+}
+
+.carbonbadge {
+    font-size: x-small !important; /* Scales down the font size */
 }
     </style>
 </head>
@@ -226,14 +253,21 @@
 </div>
 <hr/>
 <footer>
-      <small>
-        &copy;
-        <script type="text/javascript">
-          document.write(new Date().getFullYear())
-        </script>
-        Thomas Schweizer
-      </small>
+    <div id="wcb" class="carbonbadge"></div>
+    <div>
+        <small>
+            <span>
+                &copy;
+                <script type="text/javascript">
+                    document.write(" " + new Date().getFullYear() + " ")
+                </script>
+                Thomas Schweizer
+            </span>
+        </small>
+    </div>
 </footer>
+<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+
 <script type="text/javascript">
     <!-- Email obfuscation -->
     var dataMap = {
